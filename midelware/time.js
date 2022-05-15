@@ -6,8 +6,6 @@ const addTime = (req,res, next)=>{
     req.date = date ;
     const h = date.getHours()
     if (h>9 && h<13){
-        res.home
-    }else{
         res.sendFile(nowork)
     }
     next()
